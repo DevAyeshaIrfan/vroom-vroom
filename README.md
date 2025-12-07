@@ -73,21 +73,6 @@ At the end, you’ll see your **final score** along with a clean exit back to DO
 
 ---
 
-## 🧩 Technical Details
 
-- **Language:** x86 Assembly (16-bit, real mode)  
-- **Target:** `.COM` executable  
-- **Graphics:** VGA Mode 13h (320x200, 256 colors)  
-- **Input:** BIOS keyboard interrupts  
-- **Music:** Implemented using **multitasking via timer interrupt**  
-- **Randomness:** Pseudo-random generator to select lanes  
-- **Memory / Stack:**
-  - Manual stack management in all routines
-  - Proper **stack clearance** before exit
-- **Interrupts:**
-  - Custom interrupt handlers for music / timing
-  - All interrupts are **unhooked cleanly** on exit (verified via AFD)
-
----
 
 
